@@ -1,0 +1,113 @@
+ /* example3 */
+ .box3 {
+    position: relative;
+    animation: geeks3 5s infinite;
+    animation-play-state: paused;
+height: 200px;
+font-size: 40px;
+ text-align: center;
+color: blue; }
+
+  
+@keyframes geeks3 {
+   0% {
+        left: 0px;
+     top:0px;
+      width: 400px;
+     height: 400px;
+         background: blue;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);}
+    50% {
+        left: 250px;
+      background: yellow;
+      top:40px;
+       width: 400px;
+     height: 50px;
+ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+      100% {
+        left: 500px;
+     top:80px;
+          width: 400px;
+     height: 400px;
+         background: blue;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);        
+    }
+}
+
+.box3.horizTranslate3 {
+    animation-play-state: running;
+}
+  
+
+/* makes it so it starts and stops when you hover over the div */
+
+
+.box3:hover {
+    animation-play-state: running;
+}
+
+
+/* example 4 */
+
+
+.box4 {
+    position: relative;
+    animation: geeks4 7s infinite;
+    animation-play-state: paused;
+height: 200px;
+font-size: 40px;
+ text-align: center;
+color: rgb(0, 0, 3);
+}
+  
+@keyframes geeks4 {
+   0% {
+        left: 0px;
+     top:0px;
+      width: 400px;
+     height: 400px;
+         background: rgb(235, 6, 139);
+         color: azure;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+
+        
+    }
+    50% {
+        left: 1000px;
+      background: yellow;
+      color: coral;
+      top:340px;
+       width: 400px;
+     height: 50px;
+ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+
+;
+
+
+    
+    }
+      100% {
+        left: 0px;
+     top:0px;
+          width: 400px;
+     height: 400px;
+         background: rgb(113, 219, 103);
+         color: indigo;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+   
+        
+    }
+}
+
+.box4.horizTranslate4 {
+    animation-play-state: running;
+}
+  
+
+/* makes it so it starts and stops when you hover over the div */
+
+.box4:hover {
+    animation-play-state: running;
+}
